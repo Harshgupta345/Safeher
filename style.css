@@ -1,0 +1,506 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lora', serif;
+    background-color: #d8c2b2;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f5f1eb;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-icon {
+    font-size: 24px;
+    margin-right: 8px;
+    color: #333;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+nav a {
+    margin: 0 15px;
+    color: #333;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+/* Buttons */
+.more-btn,
+.learn-more-btn {
+    padding: 8px 16px;
+    background-color: #647d5c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    transition: background-color 0.3s;
+}
+
+.more-btn:hover,
+.learn-more-btn:hover {
+    background-color: #506447;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 20px;
+    background-color: #d8c2b2;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+}
+
+.hero-text {
+    flex: 1;
+    margin-left: 40px;
+    max-width: 400px;
+    text-align: left;
+}
+
+.hero-text h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* Gallery Section */
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+    background-color: #d8c2b2;
+}
+
+.gallery-item {
+    border: 4px solid #ff5722;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    background-color: #d8c2b2;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 8px;
+}
+
+.gallery-item p {
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Contact Form Section */
+.contact-form {
+    padding: 40px 20px;
+    background-color: #d8c2b2;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.contact-form h2 {
+    font-size: 28px;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-form form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f5f1eb;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: grid;
+    gap: 15px;
+}
+
+.contact-form label {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #333;
+    text-align: left;
+}
+
+.contact-form input,
+.contact-form select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.contact-form button {
+    padding: 12px;
+    background-color: #647d5c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.contact-form button:hover {
+    background-color: #506447;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.footer-logo img,
+.footer-social a img {
+    margin-bottom: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.footer-social a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-social a:hover {
+    color: #555;
+}
+
+.footer-features ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-features li {
+    margin: 5px 0;
+}
+
+/* Search Bar */
+.search-bar {
+    padding: 5px;
+    font-size: 13px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-left: 15px;
+}
+
+.search-bar:focus {
+    outline: none;
+    border-color: #333;
+}
+
+/* Hamburger Menu */
+.hamburger-menu {
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+    margin-left: 20px;
+}
+
+.menu-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 10;
+    text-align: center;
+    transition: transform 0.3s ease;
+    transform: translateX(100%);
+}
+
+.menu-overlay ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 50px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.menu-header {
+    font-size: 50px;
+    font-weight: bold;
+    color: #d8c2b2;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 8px solid #444;
+}
+
+.menu-overlay li {
+    margin: 20px 0;
+}
+
+.menu-overlay li a {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.menu-overlay li a span {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+/* Toggle for showing the menu */
+.show-menu {
+    display: block;
+    transform: translateX(0);
+}
+
+/* General styling */
+/* General styling */
+/* General styling */
+/* General styling */
+/* General styling */
+/* General styling */
+body {
+    font-family: 'Lora', serif;
+    background-color: #d8c2b2;
+    color: #333;
+}
+
+/* Experience Page Container */
+.experience-page-container {
+    width: 90%;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+/* Add Your Experience Section - User Friendly */
+.user-experience-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 80px; /* Increased gap to 80px for more space */
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.user-experience-input h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+.user-experience-input textarea {
+    width: 100%;
+    height: 120px;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.user-experience-input button {
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.user-experience-input button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Experiences Display (Creative Animations with Speed Adjustments) */
+.experiences-display {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+    height: 500px; /* Increased height for better display */
+}
+
+.experience-slider {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.experience-item {
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    background-color:#d8c2b2;
+    border-radius: 12px;
+    font-size: 1.2em;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease-in-out;
+    position: absolute;
+    opacity: 0;
+    transform: translateY(100%); /* Start off-screen */
+}
+
+/* Keyframes for sliding animation (with creative effects) */
+@keyframes slide-vertical-left-right {
+    0%, 100% { opacity: 0; transform: translateY(100%) translateX(-100%); }
+    10%, 30% { opacity: 1; transform: translateY(0) translateX(0); }
+    50%, 60% { opacity: 0; transform: translateY(-100%) translateX(100%); }
+}
+
+@keyframes slide-vertical-right-left {
+    0%, 100% { opacity: 0; transform: translateY(100%) translateX(100%); }
+    10%, 30% { opacity: 1; transform: translateY(0) translateX(0); }
+    50%, 60% { opacity: 0; transform: translateY(-100%) translateX(-100%); }
+}
+
+/* Apply animations to items alternately */
+.experience-item:nth-child(1) {
+    animation: slide-vertical-left-right 10s infinite;
+    animation-delay: 0s; /* Immediate start */
+}
+
+.experience-item:nth-child(2) {
+    animation: slide-vertical-right-left 10s infinite;
+    animation-delay: 5s; /* Delay for alternating effect */
+}
+
+.experience-item:nth-child(3) {
+    animation: slide-vertical-left-right 10s infinite;
+    animation-delay: 10s; /* Delay for sequential movement */
+}
+
+.experience-item:nth-child(4) {
+    animation: slide-vertical-right-left 10s infinite;
+    animation-delay: 15s; /* Delay for alternating effect */
+}
+/* General styling */
+/* General Styling */
+/* General Styles */
+/* General Styles */
+.experience-item {
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    background-color: #d8c2b2;
+    border-radius: 12px;
+    font-size: 1.2em;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease-in-out;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden; /* Initially hide items */
+    transform: translateY(100%); /* Start off-screen */
+    animation-play-state: running;
+}
+
+/* Make the item visible when it's active */
+.experience-item.active {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0); /* Bring into view */
+}
+
+/* Keyframes for sliding animation */
+@keyframes slide-vertical-left-right {
+    0%, 100% { opacity: 0; transform: translateY(100%) translateX(-100%); }
+    10%, 30% { opacity: 1; transform: translateY(0) translateX(0); }
+    50%, 60% { opacity: 0; transform: translateY(-100%) translateX(100%); }
+}
+
+@keyframes slide-vertical-right-left {
+    0%, 100% { opacity: 0; transform: translateY(100%) translateX(100%); }
+    10%, 30% { opacity: 1; transform: translateY(0) translateX(0); }
+    50%, 60% { opacity: 0; transform: translateY(-100%) translateX(-100%); }
+}
+/* Modal Styles */
+/* Basic Modal Styles */
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-mode header, body.dark-mode footer {
+    background-color: #1e1e1e;
+}
+
+body.dark-mode .gallery-item img {
+    filter: brightness(0.8);
+}
